@@ -1,0 +1,17 @@
+#gallery{
+  width: 516px;
+}
+.block{
+  display: inline-block;
+  width: 90px;
+  height: 50px;
+  margin: 5px;
+  background-color: red;
+}
+.bigger{
+  height: 110px;
+}
+.larger{
+  height: 110px;
+  width: 190px;
+}

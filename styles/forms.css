@@ -1,0 +1,96 @@
+/*
+HTML 5 Template Name: Workit
+File: Forms CSS
+Author: OS Templates
+Author URI: http://www.os-templates.com/
+Licence: <a href="http://www.os-templates.com/template-terms">Website Template Licence</a>
+*/
+
+form, fieldset, legend{margin:0; padding:0; border:none;}
+legend{display:none;}
+/*input, textarea, select{font-size:12px; font-family:Georgia,"Times New Roman",Times,serif;}*/
+input, textarea { 
+    padding: 9px; 
+    border: solid 1px #E5E5E5; 
+    outline: 0; 
+    font: normal 13px/100% Verdana, Tahoma, sans-serif; 
+    width: 400px; 
+    background: #FFFFFF; 
+    } 
+   
+textarea { 
+    width: 400px; 
+    max-width: 400px; 
+    height: 150px; 
+    line-height: 150%; 
+    } 
+   
+input:hover, textarea:hover, 
+input:focus, textarea:focus { 
+    border-color: #C9C9C9; 
+    } 
+   
+.form label { 
+    margin-left: 10px; 
+    color: #999999; 
+    } 
+   
+.btn {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 20;
+  -moz-border-radius: 20;
+  border-radius: 20px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+/* ----------------------------------------------Search Form-------------------------------------*/
+
+#header form{float:right; margin:0; padding:0;}
+#header form input{display:block; float:left; width:200px; margin:0; padding:8px; color:#747474; background-color:#FFFFFF; border:1px solid #DDDDDD;}
+#header form #sf_submit{width:auto; padding:7px; font-weight:bold; text-transform:uppercase; color:#FFFFFF; background-color:#76C38F; border-color:#76C38F; cursor:pointer;}
+
+/* ----------------------------------------------Forms in Comment Area-------------------------------------*/
+
+#comments form{display:block; width:100%;}
+#comments form input{width:170px; padding:2px; border:1px solid #CCCCCC; margin:5px 5px 0 0;}
+#comments form textarea{width:98%; border:1px solid #CCCCCC; padding:2px; overflow:auto;}
+#comments form p{margin:5px 0;}
+#comments form #submit, #comments form #reset{margin:0; padding:5px; color:#666666; background-color:#F7F7F7; cursor:pointer;}
+
+/* ----------------------------------------------Contact Form in Footer------------------------------------*/
+
+#footer label{display:none;}
+#footer input, #footer textarea{display:block; width:207px; margin:0 0 10px 0; padding:8px; border:none; color:#999999; background-color:#2C2C2C;}
+#footer textarea{height:90px; overflow:auto;}
+#footer button{padding:8px; font-size:13px; font-weight:bold; text-transform:uppercase; color:#FFFFFF; background-color:#76C38F; border:none; cursor:pointer;}
+
+/* CSS3 Elements */
+
+#comments input, #comments textarea, #comments button, 
+#footer input, #footer textarea, #footer button{
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	-khtml-border-radius:5px;
+	border-radius:5px;
+	}
+
+input, textarea, select{resize:none; outline:none;}
