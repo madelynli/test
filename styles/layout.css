@@ -332,7 +332,9 @@ div.desc {
 }
 
 /****** test *******/
-.gfg {
+.gfg {      display: flex;
+            justify-content: center;
+            
             font-size: 5vw;
             font-weight: bold;
             color: green;
@@ -341,7 +343,10 @@ div.desc {
         button {
             width: 300px;
             font-size: larger;
+
         }
         .container {
             display: flexbox;
+            justify-content: center;
+            text-align:center;
         }
