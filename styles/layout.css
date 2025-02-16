@@ -48,7 +48,7 @@ q:after{content:' „'; font-size:26px; line-height:0;}
 
 div.wrapper{display:block; width:100%; text-align:left;}
 
-.row1{color:#989898; background-color:#FFFFFF; border-top:5px solid #1e4b87;}
+.row1{color:#989898; background-color:#FFFFFF; border-top:5px solid #FFFFFF;}
 .row2{color:#FFFFFF; background-color:#1e4b87;}
 .row3{color:#000000; background-color:#FFFFFF;}
 .row3 a{color:#1e4b87; background-color:#FFFFFF;}
