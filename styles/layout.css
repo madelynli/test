@@ -58,7 +58,7 @@ div.wrapper{display:block; width:100%; text-align:left;}
 
 /*----------------------------------------------Generalise-------------------------------------*/
 
-#header, #topnav, #container, #footer, #copyright{display:block; width:960px; margin:0 auto;}
+#header, #topnav, #container, #footer, #copyright{display:block; width:60%; align-content: center; margin:0 auto;}
 
 h1, h2, h3, h5, h6{margin:0; padding:0; font-size:24px; font-weight:normal; line-height:normal; color:#666666; background-color:#FFFFFF;}
 h7{margin:0; padding:0; font-size:14px; font-weight:normal; line-height:normal; color:#000000; background-color:#FFFFFF;}
@@ -177,6 +177,7 @@ table, th, tr, td {
      background-color: #E7EDF3; 
 } 
 */
+
 #project{
   width: 660px;
 
@@ -316,3 +317,16 @@ div.desc {
 
 #copyright{padding:20px 0;}
 #copyright p{margin:0; padding: 0;}
+
+/* styling for screen width less than 630 */
+        @media screen and (max-width: 630px) {
+        #about_content{float:left; width:630px; margin-bottom:0;}
+        .one_quarter, .two_quarter, .three_quarter{display:block; float:left; margin:0 0 0 20px;}
+.one_quarter{width:125px;}
+.two_quarter{width:235px;}
+.three_quarter{width:360px;}
+
+.one_third, .two_third{display:block; float:left; margin:0 0 0 30px;}
+.one_third{width:150px;}
+.two_third{width:315px;}
+}
