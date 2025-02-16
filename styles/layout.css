@@ -330,3 +330,18 @@ div.desc {
 .one_third{width:150px;}
 .two_third{width:315px;}
 }
+
+/****** test *******/
+.gfg {
+            font-size: 5vw;
+            font-weight: bold;
+            color: green;
+            text-align: center;
+        }
+        button {
+            width: 300px;
+            font-size: larger;
+        }
+        .container {
+            display: flexbox;
+        }
