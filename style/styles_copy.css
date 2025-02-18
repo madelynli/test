@@ -1,0 +1,179 @@
+*{
+padding: 0;
+margin: 0;
+}
+div .box1{
+background-color: bisque;
+border: 10px solid rgb(232, 69, 69);
+border-radius: 2%;
+height: 50vh;
+width: auto;
+}
+
+headerTop{
+height: 80px;
+}
+header{
+height: 130px;
+background-color:#1e4b87;
+}
+
+header nav ul{
+display: flex;
+margin-left: 15%;
+list-style:none;
+}
+
+header nav ul li{
+padding-left: 10%;
+
+ margin-top: 30px;
+}
+
+header a{
+text-decoration: none;
+color: white;
+
+}
+
+header logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header logo img {
+    width: 233px;
+    border-radius: 130px;
+}
+
+section{
+height: 70vh;
+border: 1px solid grey;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.Container{
+margin-top: 2%;
+display: flex;
+}
+
+.Container img{
+height: 300px;
+}
+
+.Container h2{
+margin-top: 2%;
+font-size: 3em;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Container p, ul{
+margin-top: 2%;
+font-size: 1.5rem;
+}
+
+#intro {
+background-color: lightpink;
+}
+#about{
+	background-color: bisque;
+}
+#slidershow {
+	background-color: lightblue;
+}
+#contact{
+background-color: blanchedalmond;
+}
+
+intro .img{
+height: 300px;
+border-radius: 50%;
+border: 12px dotted rgb(255, 85, 0);
+}
+
+intro .img:hover{
+border: 12px dotted blue;
+}
+
+about .img{
+
+height:600px; 
+filter: drop-shadow(8px 8px 16px rgba(0, 0, 0, 0.5));
+}
+
+#BrowserStack{
+font-size: 2rem;
+color: blueviolet;
+background-color: bisque;
+}
+
+/*************************** Slideshow *********************/
+/* Slideshow container */
+.mySlides {display: none;}
+mySlides .img {vertical-align: center;}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+/************** End Slideshow *****************/
+
+footer {
+line-height: 40px;
+display: flex;
+justify-content: center;
+font-size: 1rem;
+}

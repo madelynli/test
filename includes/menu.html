@@ -1,35 +1,27 @@
-	
 <div class="wrapper row1">
-  <header id="header" class="clear">
-    <p>
-      <img src="images/logo.png" alt="">
-    </p>
-    <form action="#" method="post">
-    </form>
-  </header>
+    <header >
+        <img class="header" src="images/logo.png" alt="Logo">
+    </header>
 </div>
 <div class="wrapper row2">
-  <nav id="topnav">
-    <ul class="clear">
-      <li><a href="index.html"><b>Home</b></a></li>
-      <li><a href="website_and_mobile_app.html"><b>Website and Mobile App Projects</b></a></li>
-      <li><a class="drop" href="#"><b>Studio Art</b> <i class="fa fa-caret-down"></i></a>
-            <ul>
-              <li><a href="drawing.html"><b>Drawing</b></a></li>
-              <li><a href="2D_design_art.html"><b>2D Design Art</b></a></li>
-              <li><a href="3D_design_art.html"><b>3D Design Art</b></a></li>
-            </ul>
-          </li>
-      <li><a href="graphicdesign.html"><b>Graphic Design</b></a></li>
-      <li><a href="photography.html"><b>Photography</b></a></li>
-      
-      <!--
-      <a href="javascript:void(0)" class="dropbtn">Dropdown</a><i class="fa fa-caret-down"></i>
-      <li><a href="art_studio.html"><b>Art Studio</b></a></li>
-      <li><a href="about.html"><b>About</b></a></li>
-      <li><a href="news.html">Graphic Design</a></li>
-      <li><a href="photograph.html">Photograph</a></li>
-      -->
-    </ul>
-  </nav>
+  <div class="topnav " id="myTopnav">
+    <a href="index.html"><b>Home</b></a>
+      <a href="about.html"><b>About Me</b></a>
+      <a href="website_and_mobile_app.html"><b>Website and Mobile App Projects</b></a>
+    <div class="dropdown">
+            <button class="dropbtn"><b>Studio Art</b>
+          <i class="fa fa-caret-down"></i>
+        </button>
+              <div class="dropdown-content">
+                <a href="drawing.html">Drawing</a>
+                <a href="2D_design_art.html">2D Design Art</a>
+                <a href="3D_design_art.html">3D Design Art</a>
+              </div>
+       </div>
+    <a href="graphicdesign.html"><b>Graphic Design</b></a>
+    <a href="photography.html"><b>Photography</b></a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
 </div>
