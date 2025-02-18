@@ -1,102 +1,138 @@
+<!-- https://www.browserstack.com/guide/build-a-website-using-html-css -->
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
-<title>Madelyn Li's Website</title>
-<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-<meta charset="iso-8859-1">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<link rel="stylesheet" href="styles/layout.css" type="text/css">
-<link rel="stylesheet" href="styles/gallery.css" type="text/css">
-<link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to create a website using HTML and CSS</title>
+<link rel="stylesheet" href="style/styles.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="scripts/jquery-1.8.2.min.js"></script>
-<script src="scripts/jquery-defaultvalue.js"></script>
-<script src="scripts/jquery-browsercheck.js"></script>
-<!--[if lt IE 9]>
-<link rel="stylesheet" href="styles/ie.css" type="text/css">
-<script src="scripts/ie/html5shiv.min.js"></script>
-<![endif]-->
+<link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<script>
-$(function () {
-    $("#nav-placeholder").load("includes/menu.html");
-    $("#footer-placeholder").load("includes/footer.html");
-    $("#sidebar-placeholder").load("includes/sidebar.html");
-});
-</script>
-<div id="nav-placeholder"> </div>
-<!-- content -->
-<div class="wrapper row3">
-  <div id="container" class="clear">
-    <!-- content body -->
-      <div id="content">
-          <section class="hoc container clear"> 
-            <!-- ################################################################################################ -->
-            <div class="sectiontitle">
-              <h1 class="heading">Graphic Design</h1>  <br> 
-            </div>
-            <div class="group">
-                  <article class="two_quarter first"><a href="#"><img class="btmspace-30" src="images/branding_design.png" alt="" style="width:350px; height:auto;"></a><br>
-                    <h4 class="nospace heading font-x1">Branding Design for LLS Organization</h4>        
-                    <p><b>Year</b>:  2024<br>
+<div class="wrapper row1">
+    <header >
+        <img class="header" src="images/logo.png" alt="Logo">
+    </header>
+</div>
+<div class="wrapper row2">
+	<div class="topnav " id="myTopnav">
+	  <a href="index.html"><b>Home</b></a>
+      <a href="about.html"><b>About Me</b></a>
+      <a href="website_and_mobile_app.html"><b>Website and Mobile App Projects</b></a>
+	  <div class="dropdown">
+	  	      <button class="dropbtn"><b>Studio Art</b>
+          <i class="fa fa-caret-down"></i>
+        </button>
+              <div class="dropdown-content">
+                <a href="drawing.html">Drawing</a>
+                <a href="2D_design_art.html">2D Design Art</a>
+                <a href="3D_design_art.html">3D Design Art</a>
+              </div>
+       </div>
+	  <a class="active" href="graphicdesign.html"><b>Graphic Design</b></a>
+	  <a href="photography.html"><b>Photography</b></a>
+	  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	    <i class="fa fa-bars"></i>
+	  </a>
+	</div>
+</div>
+<main>
+<div class="wrapper row1">
+	<section class="firstsection">
+        <div class="box-main">      
+            <div class="secondhalf">  
+            <br>            
+             <h1>Website and Mobile App Projects</h1><br>
+                <div id="graphicdesign">
+                   <div class="design_container">
+                          
+                  <article >
+                    <div class="graphic_image1">
+                    <a href="#"><img class="btmspace-30" src="images/branding_design.png" alt="" style="width:100%; height:auto;"></a>
+                        <p><b>Branding Design for LLS Organization</b><br>        
+                        <p><b>Year</b>:  2024<br>
                        <b>Medium</b>: Adobe Photoshop, Canva<br>
                        <b>Dimension</b>: 1526 x 2154 (Pixel)</p>
                        <p class="two_quarter2 first">I was inspired to redesign the logo for the Leukemia & Lymphoma Society (LLS), a nonprofit organization dedicated to the fight against cancer. This project allowed me to dive deeper into typography, graphic design elements, and overall design principles. Above all, I focused on enjoying the process of recreating the organization's logo. <br><br>
-In this project, I honed my editing skills in Canva and Photoshop while designing mockups for a shirt and hoodie. I incorporated different versions of the logo, selected a color palette, and chose a font to complement the logo design. The new logo honors and recognizes the donors who make these efforts possible, along with the patients, caregivers, and teams who are fighting cancer. My focus was on crafting a design that remains welcoming and inclusive. I hope to help advocate for a brighter future for both survivors and patients.</p>
-<a class="btn" href="https://www.canva.com/design/DAGHyH5gEYI/1FMNUTxD7Msa8gGXH8UiLw/view?utm_content=DAGHyH5gEYI&utm_campaign=designshare&utm_medium=link&utm_source=editor"><b>Full View &raquo; </b></a>
-</p>
-                    
-                    <footer class="nospace"><a class="btn" href="#"> <br><br></a></footer>
+                        In this project, I honed my editing skills in Canva and Photoshop while designing mockups for a shirt and hoodie. I incorporated different versions of the logo, selected a color palette, and chose a font to complement the logo design. The new logo honors and recognizes the donors who make these efforts possible, along with the patients, caregivers, and teams who are fighting cancer. My focus was on crafting a design that remains welcoming and inclusive. I hope to help advocate for a brighter future for both survivors and patients.</p>
+                        <p><a class="btn" href="https://www.canva.com/design/DAGHyH5gEYI/1FMNUTxD7Msa8gGXH8UiLw/view?utm_content=DAGHyH5gEYI&utm_campaign=designshare&utm_medium=link&utm_source=editor"><b>Full View &raquo; </b></a>
+                        </p>
+                    </div>
                   </article>
-                  <article class="two_quarter"><a href="#"><img class="btmspace-30" src="images/book_over_redesign.jpg" alt="" style="width:420px; height:auto;"></a>
-                    <h4 class="nospace heading font-x1">Book Cover Redesign for Alabama Moon by Watt Key</h4>
-                    <p><b>Year</b>:  2024<br>
+                  <article >
+                    <div class="graphic_image1">
+                        <a href="#"><img class="btmspace-30" src="images/book_over_redesign.jpg" alt="" style="width:100%; height:auto;"></a>
+                        <p><b>Book Cover Redesign for Alabama Moon by Watt Key</b></p>
+                        <p><b>Year</b>:  2024<br>
                        <b>Medium</b>: Adobe Photoshop<br>
                        <b>Dimension</b>: 1360 x 1030 (Pixel)</p>
                        <p>Moon Blake lives in the forests of Alabama, away from civilization. The innocent soul steps outside the forest after his parents pass away. Moon gets tangled up with an arrogant constable and his life becomes a full adventure. <br><br>
-I noticed that its old book cover did not convey the feeling of the story well. In this redesign, I signified Moon’s innocence with a pure white background. For the book name, I emphasized the typography and the coloring of the letters; I tried to capture the adventurous theme through the mist surrounding the letters. To create the tension, several letters are imbalanced in different sizes. I created the font in Illustrator by reshaping the letters, resizing the shape, and picking out the color. In Photoshop I designed the mist and reduced the opacity of the brush and pulled down the ink for a scratched look in letters. I hope this design captures the adventurous feeling of the novel.
- </p>
- <p><a class="btn" href="book-cover-redesign.pdf"><b>Full View &raquo; </b></a></p>
-                    <footer class="nospace"><a class="btn" href="#"> <br><br></a></footer>
+                        I noticed that its old book cover did not convey the feeling of the story well. In this redesign, I signified Moon’s innocence with a pure white background. For the book name, I emphasized the typography and the coloring of the letters; I tried to capture the adventurous theme through the mist surrounding the letters. To create the tension, several letters are imbalanced in different sizes. I created the font in Illustrator by reshaping the letters, resizing the shape, and picking out the color. In Photoshop I designed the mist and reduced the opacity of the brush and pulled down the ink for a scratched look in letters. I hope this design captures the adventurous feeling of the novel.
+                         </p>
+                         <p><a class="btn" href="book-cover-redesign.pdf"><b>Full View &raquo; </b></a></p>
+                     </div>
                   </article>
-            </div>
-            
-            <div class="group">
-                  <article class="two_quarter first"><a href="#"><img class="btmspace-30" src="images/self-love_poster.png" alt="" style="width:350px; height:auto;"></a>
-                    <h4 class="nospace heading font-x1">Self-love Poster</h4>
-                    <p><b>Year</b>:  2024<br>
-                       <b>Medium</b>: Canva<br>
-                       <b>Dimension</b>: 958 x 1528 (Pixel)</p>
-                    <footer class="nospace"><a class="btn" href="#"> <br><br></a></footer>
-                  </article>
-                  <article class="two_quarter"><a href="#"><img class="btmspace-30" src="images/social_issue_poster.png" alt="" style="width:420px; height:auto;"></a>
-                    <h4 class="nospace heading font-x1">Social Issue Poster</h4>        
-                    <p><b>Year</b>:  2024<br>
-                       <b>Medium</b>: Canva<br>
-                       <b>Dimension</b>: 1678 x 2234 (Pixel)</p>
-                    <footer class="nospace"><a class="btn" href="#"> <br><br></a></footer>
-                  </article>
-            </div>
-            
-            <div class="group">
-                  <article class="two_quarter first"><a href="#"><img class="btmspace-30" src="images/space_observation_deck.png" alt="" style="width:400px; height:auto;"></a>
-                    <h4 class="nospace heading font-x1">Space Observation Deck</h4>
-                    <p><b>Year</b>:  2024<br>
-                       <b>Medium</b>: Canva<br>
-                       <b>Dimension</b>: 1598 x 1122 (Pixel)</p>
-                    <footer class="nospace"><a class="btn" href="#"> <br><br></a></footer>
-                  </article>
-                  <article class="two_quarter"><a href="#"><img class="btmspace-30" src="images/comic_strip_project.png" alt="" style="width:330px; height:auto;"></a>
-                    <h4 class="nospace heading font-x1">Comic Strip Project</h4>
-                    <p><b>Year</b>:  2024<br>
-                       <b>Medium</b>: Storyboardthat<br>  </p>    
-                       <p><a class="btn" href="comic_strip_project.pdf"><b>Full View &raquo; </b></a></p>                
-                    <footer class="nospace"><a class="btn" href="#"> <br><br></a></footer>
-                  </article>
-            </div>
-            </section>
-      </div>
-  </div>
-</div> 
-<div id="footer-placeholder"> </div> 
+           
+                    </div>
+                    <div class="design_container">
+                        <article style="margin-top: 15px; margin-right: 15px;">
+                            <div class="graphic_image1">
+                            <a href="#"><img class="btmspace-30" src="images/self-love_poster.png" alt="" style="width:100%; height:auto;"></a>
+                            <p class="ex1"><b>Self-love Poster</b></p>
+                            <p><b>Year</b>:  2024<br>
+                               <b>Medium</b>: Canva<br>
+                               <b>Dimension</b>: 958 x 1528 (Pixel)</p>
+                            </div>
+                        </article>
+                      <article style="margin-top: 25px;">
+                        <div class="graphic_image1">
+                        <a href="#"><img class="btmspace-30" src="images/social_issue_poster.png" alt="" style="width:100%; height:auto;"></a>
+                        <p><b>Social Issue Poster</b></p>     
+                        <p><b>Year</b>:  2024<br>
+                           <b>Medium</b>: Canva<br>
+                           <b>Dimension</b>: 1678 x 2234 (Pixel)</p>
+                       </div>
+                      </article>
+                    </div>
+                    <div class="design_container">
+                          <article style="margin-top: 25px;">
+                            <div class="graphic_image1">
+                                <a href="#"><img class="btmspace-30" src="images/space_observation_deck.png" alt="" style="width:100%; height:auto;"></a>
+                                <p><b>Space Observation Deck</b></p>
+                                <p><b>Year</b>:  2024<br>
+                                   <b>Medium</b>: Canva<br>
+                                   <b>Dimension</b>: 1598 x 1122 (Pixel)</p>
+                            </div>                
+                            </article>
+                          <article style="margin-top: 25px;">
+                            <div class="graphic_image1">
+                                <a href="#"><img class="btmspace-30" src="images/comic_strip_project.png" alt="" style="width:100%; height:auto;"></a>
+                            <p><b>Comic Strip Project</b></p>
+                            <p><b>Year</b>:  2024<br>
+                               <b>Medium</b>: Storyboardthat<br>  </p>    
+                               <p><a class="btn" href="comic_strip_project.pdf"><b>Full View &raquo; </b></a></p>  
+                            </div>              
+                            </article>
+                    </div>        
+        </div> <!-- end project -->
+    </div>  <!-- end secondhalf -->    
+</div>
+</main>
+<div class="wrapper row4">
+<footer>
+<p class="fl_center">Madelyn Li &nbsp; <i>limadelyn94@gmail.com</i> &nbsp; 2025 &nbsp; &nbsp;</p>
+</footer>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script> 
+</body>
+</html>

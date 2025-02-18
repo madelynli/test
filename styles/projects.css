@@ -1,0 +1,43 @@
+#project{
+  width: 100%;
+
+}
+.block_image1{
+  border-radius: 8px;
+  display: inline-block;
+  width: 65%;
+  height:auto;
+  padding: 20px;
+  margin: 5px;
+  background-color: #e9edf5;
+  margin-bottom: 20px;
+}
+.block_image2{
+  border-radius: 8px;
+  display: inline-block;
+  width: 65%;
+  height:auto;
+  padding: 20px;
+  margin: 5px;
+  background-color: #e9edf5;
+  margin-bottom: 20px;
+}
+.block_image3{
+  border-radius: 8px;
+  display: inline-block;
+  width: 65%;
+  height:auto;
+  padding: 20px;
+  margin: 5px;
+  background-color: #e9edf5;
+  margin-bottom: 20px;
+}
+.block_image4{
+  border-radius: 8px;
+  display: inline-block;
+  width: 65%;
+  height:auto;
+  padding: 20px;
+  margin: 5px;
+  background-color: #e9edf5;
+}

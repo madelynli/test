@@ -1,0 +1,42 @@
+#graphicdesign{
+  width: 100%;
+}
+.graphic_image1{
+  border-radius: 16px;
+  display: inline-block;
+  width: 100%;
+  height:auto;
+  padding: 20px;
+  margin: 5px;
+  background-color: #CADDEC;
+  margin-bottom: 20px;
+}
+.photo_image1{
+  
+  display: inline-block;
+  width: 50%;
+  height:auto;
+  padding: 20px;
+  margin: 5px;
+  background-color: #E2ECF4;
+  margin-bottom: 20px;
+}
+.photo_image2{
+  
+  display: inline-block;
+  width: 100%;
+  height:auto;
+  padding: 20px;
+  margin: 5px;
+  background-color: #E2ECF4;
+  margin-bottom: 20px;
+}
+.block_image4{
+  border-radius: 8px;
+  display: inline-block;
+  width: 65%;
+  height:auto;
+  padding: 20px;
+  margin: 5px;
+  background-color: #E2ECF4;
+}

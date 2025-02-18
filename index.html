@@ -1,60 +1,122 @@
+<!-- https://www.browserstack.com/guide/build-a-website-using-html-css -->
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
-<title>Madelyn Li's Web Site</title>
-<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-<meta charset="iso-8859-1">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="styles/layout.css" type="text/css">
-<link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
+<title>Madelyn Li's Web Site</title>
+<link rel="stylesheet" href="style/styles.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="scripts/jquery-1.8.2.min.js"></script>
-<script src="scripts/jquery-defaultvalue.js"></script>
-<script src="scripts/jquery-browsercheck.js"></script>
-<!--[if lt IE 9]>
-<link rel="stylesheet" href="styles/ie.css" type="text/css">
-<script src="scripts/ie/html5shiv.min.js"></script>
-<![endif]-->
+<link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
+<script src="scripts/jquery-innerfade.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<style>
+:target {
+    background-color: yellow;
+}
+</style>
 </head>
 <body>
-<script>
-$(function () {
-    $("#nav-placeholder").load("includes/menu.html");
-    $("#footer-placeholder").load("includes/footer.html");
-    $("#sidebar-placeholder").load("includes/sidebar.html");
-});
-</script>
-<div id="nav-placeholder"> </div>
-<!-- content -->
-<div class="wrapper row3">
-  <div id="container" class="clear">
-    <!-- content body -->
-    <div id="content">
-      <section id="info" class="clear">
-        <article class="one_quarter">
-          
-          <img class="imgl" src="images/ml.jpeg" alt="" style="width:auto;height:300px;">
-        </article>
-        <article class="two_third">
-          <h8></h8>
-          
-          <h4>Hey! <br>I'm Madelyn Li</h4>
-          <!--
-          <p>I am senior in Mira Costa High School.  I have an avid interest in the arts and media arts, and always makes an effort to learn a lot about different media arts and software tools.  My interests span 3D modeling, 2D graphic design, mobile apps
-          UI design, and website design and development. </p> -->
-          <p>
-            I'm an artist and a high school senior student from the metropolitan city of Los Angeles. Ever since I picked up a crayon when I was young, I've never stopped drawing and creating. With my creative imagination, I am constantly exploring how to integrate art with technology, create performances and unique experiences across a variety of media and materials. My interests span virtual art, 2D graphic design, 3D modeling, mobile apps UI design, and dynamic website design and development. Whether I'm drawing a picture or designing interactive media, I'm driven by a passion for designing efficient, effortless, and empowering experiences.</p>
-            <P>I'm excited to start my college career in the upcoming fall! Interactive Media Arts is my favorite potential major. When I was in middle school, I toured NYU and was really impressed to see a diverse and open-minded community NYU. I am excited by the IMA program as it combines a liberal arts core with technology, coding as well as creating physical and digital interactions. IMA professors are pioneers in their chosen fields so I look forward to learn and feel inspired by them. In particular, I'm interested in the diverse experiences of various teachers and staffs, such as some being game studios owners, curators of art exhibitions, and YouTubers with millions of subscribers. I would love the chance to study at NYU under the IMA major to pursue studies that align perfectly with my background and interests.</P>
 
-        </article>
-        </article><br />     
-       
-      </section>
-      
-   
-  </div>
+<div id="nav-placeholder"> </div>
+<div class="wrapper row1">
+    <header >
+              <img class="header" src="images/logo.png" style="width: auto; height: 100%" alt="Logo">
+    </header>
 </div>
-<!-- Footer -->
-  </div>
+<div class="wrapper row2">
+	<div class="topnav " id="myTopnav">
+		  <a class="active" href="index.html"><b>Home</b></a>
+	      <a  href="about.html"><b>About Me</b></a>
+	      <a href="website_and_mobile_app.html"><b>Website and Mobile App Projects</b></a>
+		  <div class="dropdown">
+		  	      <button class="dropbtn"><b>Studio Art</b>
+	          <i class="fa fa-caret-down"></i>
+	        </button>
+	              <div class="dropdown-content">
+	                <a href="drawing.html">Drawing</a>
+	                <a href="2D_design_art.html">2D Design Art</a>
+	                <a href="3D_design_art.html">3D Design Art</a>
+	              </div>
+	       </div>
+		  <a href="graphicdesign.html"><b>Graphic Design</b></a>
+		  <a href="photography.html"><b>Photography</b></a>
+		  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		    <i class="fa fa-bars"></i>
+		  </a>
+	</div>
 </div>
-<div id="footer-placeholder"> </div> 
+
+<main>
+<section id="slidershow">
+	<div class="container">
+		<h1>Welcom to Madelyn's Website</h1><br>
+		
+
+		<div class="slideshow-container">
+
+			<div class="mySlides fade">
+			  <img src="images/little_paws_slide.png" style="width: 80%; filter: drop-shadow(8px 8px 16px rgba(0, 0, 0, 0.5)); ">			 
+			</div>
+			<div class="mySlides fade">			  
+			  <img src="images/scoreusa_slide.png" style="width: 80%; filter: drop-shadow(8px 8px 16px rgba(0, 0, 0, 0.5)); ">			  
+			</div>
+			<div class="mySlides fade">			  
+			  <img src="images/ricething_slide.png" style="width: 80%; filter: drop-shadow(8px 8px 16px rgba(0, 0, 0, 0.5)); ">		  
+			</div>
+			<div class="mySlides fade">			  
+			  <img src="images/llc.png" style="width: 80%; filter: drop-shadow(8px 8px 16px rgba(0, 0, 0, 0.5)); ">			  
+			</div>
+			<div class="mySlides fade">			  
+			  <img src="images/bookcover.png" style="width: 80%; filter: drop-shadow(8px 8px 16px rgba(0, 0, 0, 0.5)); ">			  
+			</div>
+        </div>
+        <div style="margin-left: 35%; margin-top: 15px;">
+		  <span class="dot"></span> 
+		  <span class="dot"></span> 
+		  <span class="dot"></span> 
+		  <span class="dot"></span> 
+		  <span class="dot"></span>
+		</div>
+	</div>
+	</div>
+</main>
+<div class="wrapper row4">
+<footer>
+<p class="fl_center">Madelyn Li &nbsp; <i>limadelyn94@gmail.com</i> &nbsp; 2025 &nbsp; &nbsp;</p>
+</footer>
+</div>
+<script>
+
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script> 
+</body>
+</html>

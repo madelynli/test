@@ -1,66 +1,111 @@
+<!-- https://www.browserstack.com/guide/build-a-website-using-html-css -->
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
-<title>Madelyn Li's Website</title>
-<meta charset="iso-8859-1">
-<link rel="stylesheet" href="styles/layout.css" type="text/css">
-<link rel="stylesheet" href="styles/gallery.css" type="text/css">
-<link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to create a website using HTML and CSS</title>
+<link rel="stylesheet" href="style/styles.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="scripts/jquery-1.8.2.min.js"></script>
-<script src="scripts/jquery-defaultvalue.js"></script>
-<script src="scripts/jquery-browsercheck.js"></script>
-<!--[if lt IE 9]>
-<link rel="stylesheet" href="styles/ie.css" type="text/css">
-<script src="scripts/ie/html5shiv.min.js"></script>
-<![endif]-->
+<link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<script>
-$(function () {
-    $("#nav-placeholder").load("includes/menu.html");
-    $("#footer-placeholder").load("includes/footer.html");
-    $("#sidebar-placeholder").load("includes/sidebar.html");
-});
-</script>
-<div id="nav-placeholder"> </div>
-<!-- content -->
-<div class="wrapper row3">
-  <div id="container" class="clear">
-    <!-- content body -->
-    <div id="threeDdesign_content">
-      <section>
-        <h1>3D Art and Design</h1><br>
-        <!--<img class="imgl" src="images/shenshen.jpg" alt="">-->
-        <!--
-        <div class="container">
-          <input type="checkbox" name="" id="zoom_img">
-          <label for="zoom_img">
-             <img src="images/structure1.png">
-          </label>
+<div class="wrapper row1">
+    <header >
+        <img class="header" src="images/logo.png" alt="Logo">
+    </header>
+</div>
+<div class="wrapper row2">
+	<div class="topnav " id="myTopnav">
+	  <a href="index.html"><b>Home</b></a>
+      <a href="about.html"><b>About Me</b></a>
+      <a href="website_and_mobile_app.html"><b>Website and Mobile App Projects</b></a>
+	  <div class="dropdown">
+	  	      <button class="dropbtn"><b class="active">Studio Art</b>
+          <i class="fa fa-caret-down"></i>
+        </button>
+              <div class="dropdown-content">
+                <a href="drawing.html">Drawing</a>
+                <a href="2D_design_art.html">2D Design Art</a>
+                <a href="3D_design_art.html">3D Design Art</a>
+              </div>
+       </div>
+	  <a href="graphicdesign.html"><b>Graphic Design</b></a>
+	  <a href="photography.html"><b>Photography</b></a>
+	  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	    <i class="fa fa-bars"></i>
+	  </a>
+	</div>
+</div>
+<main>
+<div class="wrapper row1">
+    <!--
+    <section id="intro">
+    <div class="Container">
+        <div class="box1">
+        <img src="Images/gallery/doggo.png" alt="display picture of doggo">
+        <h2>My name is Doggo</h2>
+        <h2 id="BrowserStack">Using ID as a CSS selector</h2>
         </div>
-        -->
-        <h4 class="heading">MORDEN OASIS</h4>
-        <p><b>Design Tool</b>: Sketchup</p>
-        <article class="tree_quarter">
+        <div class="box1">
+        <img src="Images/gallery/doggo.png" alt="display picture of doggo">
+        <h2>My name is Doggo</h2>
+        <h2 id="BrowserStack">Using ID as a CSS selector</h2>
+        </div>
+        <div class="box1">
+        <img src="Images/gallery/doggo.png" alt="display picture of doggo">
+        <h2>My name is Doggo</h2>
+        <h2 id="BrowserStack">Using ID as a CSS selector</h2>
+        </div>
+    </div> 
+</section>-->
+	<section class="firstsection">
+        <div class="box-main">      
+            <div class="secondhalf">  
+            <br>            
+             <h1>3D Art and Design</h1><br>
+                <div id="project">
+                   <div class="design_3D_container">
+                          
+        <br>
+        <article>
           <div class="imageContainer">
-            <img src="images/mordern_oasis.jpg" style="width:750px; height:auto;">
+            <img src="images/mordern_oasis.jpg" style="width:100%; height:auto;">
+            <h3 class="">MORDEN OASIS</h3>      
+            <p >Design Tool: Sketchup<br>
           </div>
         </article><br>
 
-        <p class="text center"><b>How can I create architecture that carries the essence of nature and the environment and aesthetics while being respectful to the environment around us? </b></p>
+        <p ><b>How can I create architecture that carries the essence of nature and the environment and aesthetics while being respectful to the environment around us? </b></p>
         <p>In this project, I intertwine the beauty of nature and human creation together to create a harmonious connection between human and nature. Throughout this portfolio, I explore organic shapes, geometric shapes, and the structure of elements of nature. I recreated the adaptability, efficiency and the resilience of nature into these buildings. My artwork redefines the structure of architecture and its aesthetics, and breaks free from the traditions of architecture. </p>
         
-        <p><a href="Modern_Oasis_Design_Process.pdf"><b>Check out Modern Oasis Design Process</b><p>
-        
-          </section>
-    </div>
-    <!-- right column -->
-    <aside id="right_column">
-      <div id="sidebar-placeholder"> </div> 
-  </div>
+        <p><a href="Modern_Oasis_Design_Process.pdf"><b>Check out Modern Oasis Design Process</b><p><br>
+                    </div>
+                          
+        </div> <!-- end project -->
+    </div>  <!-- end secondhalf -->    
 </div>
-<!-- Footer -->
-  </div>
+</main>
+<div class="wrapper row4">
+<footer>
+<p class="fl_center">Madelyn Li &nbsp; <i>limadelyn94@gmail.com</i> &nbsp; 2025 &nbsp; &nbsp;</p>
+</footer>
 </div>
-<div id="footer-placeholder"> </div> 
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+
+let slideIndex = 0;
+showSlides();
+
+
+</script> 
+</body>
+</html>

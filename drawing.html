@@ -1,43 +1,54 @@
+<!-- https://www.browserstack.com/guide/build-a-website-using-html-css -->
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
-<title>Madelyn Li's Website</title>
-<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-<meta charset="iso-8859-1">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<link rel="stylesheet" href="styles/layout.css" type="text/css">
-
-<link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to create a website using HTML and CSS</title>
+<link rel="stylesheet" href="style/styles.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="scripts/jquery-1.8.2.min.js"></script>
-<script src="scripts/jquery-defaultvalue.js"></script>
-<script src="scripts/jquery-browsercheck.js"></script>
-<!--[if lt IE 9]>
-<link rel="stylesheet" href="styles/ie.css" type="text/css">
-<script src="scripts/ie/html5shiv.min.js"></script>
-<![endif]-->
+<link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<script>
-$(function () {
-    $("#nav-placeholder").load("includes/menu.html");
-    $("#footer-placeholder").load("includes/footer.html");
-    $("#sidebar-placeholder").load("includes/sidebar.html");
-});
-</script>
-<div id="nav-placeholder"> </div>
-<!-- content -->
-<div class="wrapper row3">
-  <div id="container" class="clear">
-    <!-- content body -->
-    <div id="content">
-      <section>
-        <h1>Drawing</h1>
-
-
+<div class="wrapper row1">
+    <header >
+        <img class="header" src="images/logo.png" alt="Logo">
+    </header>
+</div>
+<div class="wrapper row2">
+	<div class="topnav " id="myTopnav">
+	  <a href="index.html"><b>Home</b></a>
+      <a href="about.html"><b>About Me</b></a>
+      <a href="website_and_mobile_app.html"><b>Website and Mobile App Projects</b></a>
+	  <div class="dropdown active">
+	  	      <button class="dropbtn active"><b class="active">Studio Art</b>
+          <i class="fa fa-caret-down"></i>
+        </button>
+              <div class="dropdown-content">
+                <a href="drawing.html">Drawing</a>
+                <a href="2D_design_art.html">2D Design Art</a>
+                <a href="3D_design_art.html">3D Design Art</a>
+              </div>
+       </div>
+	  <a href="graphicdesign.html"><b>Graphic Design</b></a>
+	  <a href="photography.html"><b>Photography</b></a>
+	  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	    <i class="fa fa-bars"></i>
+	  </a>
+	</div>
+</div>
+<main>
+<div class="wrapper row1">
+	<section class="firstsection">
+        <div class="box-main">      
+            <div class="secondhalf">  
+            <br>            
+             <h1>Dwawing</h1><br>
+                <div id="project">
+                   
         <table >
         <!--<tr><td border="0" colspan="2"> <i>Zoom Image on hover</i></td></tr>-->
-        <tr><td border="0"><img class="imgl" src="images/This_is_Who_I_Am.JPG" alt="" style="width:350px; height:auto;"></td>
+        <tr><td border="0"><a href="images/This_is_Who_I_Am.JPG"><img class="imgl" src="images/This_is_Who_I_Am.JPG" alt="" style="width:80%; height:auto;"></a></td>
           <td border="0"><h8>This is Who I am</h8>
                 <p><b>Year</b>: 2024<br>
                     <b>Medium</b>: Acrylic Paint, Sketchbook Paper,Gemstones, Illustration Board<br>
@@ -45,22 +56,22 @@ $(function () {
 
                 <p><b>Description</b>:<br>
                    Life is like a kaleidoscope. It changes in color and shape. This piece is designed to serve as an artistic rendering of my identity. As an Asian American, finding ways to bring me closer to my community and expanding upon my roots is an essential part to my self development. I reflected on what has held a significant meaning to me during life. <br>
-I used various colors and shapes to represent the rich experiences in my life. I embedded an image of LA (on the left) from an old magazine. I cut out irregular holes in a thicker piece of blue cardboard to symbolize my connected communities. I then glued a cardboard network to my chest, symbolizing how I put community first. The gemstones I glued down symbolize activities I have done with art and technology. It serves as a colorful reflection to my life experiences. I hope to show who I am to everyone who stumbles upon this piece.
-</p>
+                    I used various colors and shapes to represent the rich experiences in my life. I embedded an image of LA (on the left) from an old magazine. I cut out irregular holes in a thicker piece of blue cardboard to symbolize my connected communities. I then glued a cardboard network to my chest, symbolizing how I put community first. The gemstones I glued down symbolize activities I have done with art and technology. It serves as a colorful reflection to my life experiences. I hope to show who I am to everyone who stumbles upon this piece.
+                </p>
           </td>
         </tr>
-        <tr><td><img class="imgl" src="images/Life_The_Documentary.JPG" alt="" style="width:350px; height:auto;"></td>
+        <tr><td><a href="images/Life_The_Documentary.JPG"><img class="imgl" src="images/Life_The_Documentary.JPG" alt="" style="width:80%; height:auto;"></a></td>
           <td><h8>Life: The Documentary </h8>
                 <p><b>Year</b>: 2024<br>
                     <b>Medium</b>: Markers, Acrylic Paint, Duct Tape, Illustration Board<br>
                     <b>Dimension</b>: 16'' x 20''</p>
 
                 <p><b>Description</b>:<br>Life passes quickly. One day you are born, and in an instant you are quickly approaching the end of your life. Our memories are not always reliable as they fade over time, so I find it important to capture moments that help you remember and appreciate our lives. <br>
-To convey this sentiment, I take moments from life and try to capture their essence on canvas. To emphasize the importance of life, I created flowing lines. These lines reveal the fleeting moments of life and how quickly they can go by if not paid attention to. The colors get darker as life goes on, but at the end of their life, the lighter purple color reveals that they are happier now that they lived their life fully. I created this piece to show the joy in life and to show people that they should pursue things they love while they are still young.
-</p>
+                To convey this sentiment, I take moments from life and try to capture their essence on canvas. To emphasize the importance of life, I created flowing lines. These lines reveal the fleeting moments of life and how quickly they can go by if not paid attention to. The colors get darker as life goes on, but at the end of their life, the lighter purple color reveals that they are happier now that they lived their life fully. I created this piece to show the joy in life and to show people that they should pursue things they love while they are still young.
+                </p>
           </td>
         </tr>
-        <tr><td><img class="imgl" src="images/Youth_and_Beauty.jpg" alt="" style="width:350px; height:auto;"></td>
+        <tr><td><a href="images/Youth_and_Beauty.jpg"><img class="imgl" src="images/Youth_and_Beauty.jpg" alt="" style="width:80%; height:auto;"></td></td>
           <td><h8>Youth and Beauty</h8>
                 <p><b>Year</b>: 2024<br>
                     <b>Medium</b>: Pencil, Hot Glue, Acrylic, Magazine Paper d<br>
@@ -72,7 +83,7 @@ To convey this sentiment, I take moments from life and try to capture their esse
                 </p>
           </td>
         </tr>
-        <tr><td><img class="imgl" src="images/Living_Hope.JPG" alt="" style="width:350px; height:auto;"></td>
+        <tr><td><a href="images/Living_Hope.JPG"><img class="imgl" src="images/Living_Hope.JPG" alt="" style="width:80%; height:auto;"></a></td>
           <td><h8>Living Hope</h8>
                 <p><b>Year</b>: 2024<br>
                     <b>Medium</b>: White gel pen, Acrylic Paint, Illustration Board<br>
@@ -85,7 +96,7 @@ To convey this sentiment, I take moments from life and try to capture their esse
                 </p>
           </td>
         </tr>
-        <tr><td><img class="imgl" src="images/Fear_and_Risk.JPG" alt="" style="width:350px; height:auto;"></td>
+        <tr><td><a href="images/Fear_and_Risk.JPG"><img class="imgl" src="images/Fear_and_Risk.JPG" alt="" style="width:80%; height:auto;"></a></td>
           <td><h8>Fear and Risk</h8>
                 <p><b>Year</b>: 2024<br>
                     <b>Medium</b>: Acrylic Paint, Gel Pen, Illustration Board <br>
@@ -96,7 +107,7 @@ To convey this sentiment, I take moments from life and try to capture their esse
                 </p>
           </td>
         </tr>
-        <tr><td><img class="imgl" src="images/Discombobulated.JPG" alt="" style="width:350px; height:auto;"></td>
+        <tr><td><a href="images/Discombobulated.JPG"><img class="imgl" src="images/Discombobulated.JPG" alt="" style="width:80%; height:auto;"></a></td>
           <td><h8>Discombobulated</h8>
                 <p><b>Year</b>: 2024<br>
                     <b>Medium</b>: Acrylic, Yarn, Gel Pen, Micro-Pen, Illustration Board <br>
@@ -106,7 +117,7 @@ To convey this sentiment, I take moments from life and try to capture their esse
                 </p>
           </td>
         </tr>
-        <tr><td><img class="imgl" src="images/Resilience.JPG" alt="" style="width:350px; height:auto;"></td>
+        <tr><td><a href="images/Resilience.JPG"><img class="imgl" src="images/Resilience.JPG" alt="" style="width:80%; height:auto;"></a></td>
           <td><h8>Resilience</h8>
                 <p><b>Year</b>: 2024<br>
                     <b>Medium</b>: Acrylic Paint, Embroidery String, Illustration Board <br>
@@ -116,7 +127,7 @@ To convey this sentiment, I take moments from life and try to capture their esse
                 </p>
           </td>
         </tr>
-        <tr><td><img class="imgl" src="images/The_Calm.png" alt="" style="width:350px; height:auto;"></td>
+        <tr><td><a href="images/The_Calm.png"><img class="imgl" src="images/The_Calm.png" alt="" style="width:80%; height:auto;"></a></td>
           <td><h8>The Calm</h8>
                 <p><b>Year</b>: 2023<br>
                     <b>Medium</b>: Oil Pastel on Paper <br>
@@ -126,7 +137,7 @@ To convey this sentiment, I take moments from life and try to capture their esse
                 </p>
           </td>
         </tr>
-        <tr><td><img class="imgl" src="images/Adaptability.JPG" alt="" style="width:350px; height:auto;"></td>
+        <tr><td><a href="images/Adaptability.JPG"><img class="imgl" src="images/Adaptability.JPG" alt="" style="width:80%; height:auto;"></a></td>
           <td><h8>Adaptability</h8>
                 <p><b>Year</b>: 2024<br>
                     <b>Medium</b>: Acrylic, Markers, Pen, Illustration Board<br>
@@ -136,7 +147,7 @@ To convey this sentiment, I take moments from life and try to capture their esse
                 </p>
           </td>
         </tr>
-        <tr><td><img class="imgl" src="images/Prosperity_and_Luck.jpg" alt="" style="width:350px; height:auto;"></td>
+        <tr><td><a href="images/Prosperity_and_Luck.jpg"><img class="imgl" src="images/Prosperity_and_Luck.jpg" alt="" style="width:80%; height:auto;"></a></td>
           <td><h8>Prosperity and Luck</h8>
                 <p><b>Year</b>: 2024<br>
                     <b>Medium</b>: Oil Pastel on Paper <br>
@@ -147,7 +158,7 @@ To convey this sentiment, I take moments from life and try to capture their esse
                 </p>
           </td>
         </tr>
-        <tr><td><img class="imgl" src="images/Strength.JPG" alt="" style="width:350px; height:auto;"></td>
+        <tr><td><a href="images/Strength.JPG"><img class="imgl" src="images/Strength.JPG" alt="" style="width:80%; height:auto;"></a></td>
           <td><h8>Strength</h8>
                 <p><b>Year</b>: 2023<br>
                     <b>Medium</b>: Watercolor<br>
@@ -158,7 +169,7 @@ To convey this sentiment, I take moments from life and try to capture their esse
                 </p>
           </td>
         </tr>
-        <tr><td><img class="imgl" src="images/Dear_the_Future.JPG" alt="" style="width:350px; height:auto;"></td>
+        <tr><td><a href="images/Dear_the_Future.JPG"><img class="imgl" src="images/Dear_the_Future.JPG" alt="" style="width:80%; height:auto;"></a></td>
           <td><h8>Dear the Future </h8>
                 <p><b>Year</b>: 2024<br>
                     <b>Medium</b>: Acrylic Paint, Pencils, Illustration Board <br>
@@ -169,7 +180,7 @@ To convey this sentiment, I take moments from life and try to capture their esse
                 </p>
           </td>
         </tr>
-        <tr><td><img class="imgl" src="images/South_Africa's_Cape_Malay_Curry_Chicken.JPG" alt="" style="width:350px; height:auto;"></td>
+        <tr><td><a href="images/South_Africa's_Cape_Malay_Curry_Chicken.JPG"><img class="imgl" src="images/South_Africa's_Cape_Malay_Curry_Chicken.JPG" alt="" style="width:80%; height:auto;"></a></td>
           <td><h8>South Africa's Cape Malay Curry Chicken</h8>
                 <p><b>Year</b>: 2024<br>
                     <b>Medium</b>: Rice, Acrylic, Hot glue, Micro-pen, Illustration Board<br>
@@ -180,7 +191,7 @@ To convey this sentiment, I take moments from life and try to capture their esse
                 </p>
           </td>
         </tr>
-        <tr><td><img class="imgl" src="images/Life_Aesthetics.jpg" alt="" style="width:350px; height:auto;"></td>
+        <tr><td><a href="images/Life_Aesthetics.jpg"><img class="imgl" src="images/Life_Aesthetics.jpg" alt="" style="width:80%; height:auto;"></a></td>
           <td><h8>Life's Aesthetics </h8>
                 <p><b>Year</b>: 2023<br>
                     <b>Medium</b>: Pencil, Color Pencil, Micro-pen, Marker, Watercolor, Sketchbook Paper<br>
@@ -192,42 +203,26 @@ To convey this sentiment, I take moments from life and try to capture their esse
           </td>
         </tr>
       </table>
-    
-
-<!--
-        <div>
-            <div id="leftbox"> 
-                <img class="imgl" src="images/This_is_Who_I_Am.JPG" alt="" style="width:auto;height:300px;">
-          
-            </div>
-            <div id="rightbox"> 
-                <h8>This is Who I am</h8>
-                <p><b>Shenshen Wang</b> is an Assistant Professor in the Department of Physics and Astronomy at UCLA. She completed her undergraduate degree 
-                at Nanjing University and her MPhil at Hong Kong University of Science and Technology. She obtained PhD in physics from UCSD and was a 
-                postdoctoral fellow at MIT before joining UCLA.</p>
-            </div>
-      </div>
-      <div></div>
-      <hr><br>
-      <div>
-            <div id="leftbox"> 
-                <img class="imgl" src="images/This_is_Who_I_Am.JPG" alt="" style="width:auto;height:300px;">
-          
-            </div>
-            <div id="rightbox"> 
-                <h8>This is Who I am</h8>
-                <p><b>Shenshen Wang</b> is an Assistant Professor in the Department of Physics and Astronomy at UCLA. She completed her undergraduate degree 
-                at Nanjing University and her MPhil at Hong Kong University of Science and Technology. She obtained PhD in physics from UCSD and was a 
-                postdoctoral fellow at MIT before joining UCLA.</p>
-            </div>
-      </div>   
-      -->    
+                </div> <!-- end project -->
+            </div>  <!-- end secondhalf -->          
+        </div>
     </section>
-  </div>
-  
-  </div>
 </div>
-<!-- Footer -->
-  </div>
+</main>
+<div class="wrapper row4">
+<footer>
+<p class="fl_center">Madelyn Li &nbsp; <i>limadelyn94@gmail.com</i> &nbsp; 2025 &nbsp; &nbsp;</p>
+</footer>
 </div>
-<div id="footer-placeholder"> </div> 
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script> 
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!-- https://www.browserstack.com/guide/build-a-website-using-html-css -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to create a website using HTML and CSS</title>
+<link rel="stylesheet" href="style/styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="wrapper row1">
+    <header >
+        <img class="header" src="images/logo.png" alt="Logo">
+    </header>
+</div>
+<div class="wrapper row2">
+	<div class="topnav " id="myTopnav">
+	  <a href="index.html"><b>Home</b></a>
+      <a class="active" href="about.html"><b>About Me</b></a>
+      <a href="website_and_mobile_app.html"><b>Website and Mobile App Projects</b></a>
+	  <div class="dropdown">
+	  	      <button class="dropbtn"><b>Studio Art</b>
+          <i class="fa fa-caret-down"></i>
+        </button>
+              <div class="dropdown-content">
+                <a href="drawing.html">Drawing</a>
+                <a href="2D_design_art.html">2D Design Art</a>
+                <a href="3D_design_art.html">3D Design Art</a>
+              </div>
+       </div>
+	  <a href="graphicdesign.html"><b>Graphic Design</b></a>
+	  <a href="photography.html"><b>Photography</b></a>
+	  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	    <i class="fa fa-bars"></i>
+	  </a>
+	</div>
+</div>
+<main>
+<div class="wrapper row1">
+  <section class="firstsection">
+    <div class="box_title">      
+        <div >
+           <h1>About Me</h1>
+        </div>
+    </div>  
+  </section>
+ 
+  <section class="firstsection">
+        <div class="box-main">
+            <div class="firstHalf">            
+                <img align="left" class="img-fluid img-thumbnail" src="images/ml.jpeg" alt="" style="width:80%;height:auto;">
+            </div>           
+            <div class="secondhalf">
+                <h4>Hey! <br>I'm Madelyn Li</h4>
+                <p class="text-small">
+              I'm an artist and a high school senior student from the metropolitan city of Los Angeles. Ever since I picked up a crayon when I was young, I've never stopped drawing and creating. With my creative imagination, I am constantly exploring how to integrate art with technology, create performances and unique experiences across a variety of media and materials. My interests span virtual art, 2D graphic design, 3D modeling, mobile apps UI design, and dynamic website design and development. Whether I'm drawing a picture or designing interactive media, I'm driven by a passion for designing efficient, effortless, and empowering experiences.</p>
+              <P class="text-small">I'm excited to start my college career in the upcoming fall! Interactive Media Arts is my favorite potential major. When I was in middle school, I toured NYU and was really impressed to see a diverse and open-minded community NYU. I am excited by the IMA program as it combines a liberal arts core with technology, coding as well as creating physical and digital interactions. IMA professors are pioneers in their chosen fields so I look forward to learn and feel inspired by them. In particular, I'm interested in the diverse experiences of various teachers and staffs, such as some being game studios owners, curators of art exhibitions, and YouTubers with millions of subscribers. I would love the chance to study at NYU under the IMA major to pursue studies that align perfectly with my background and interests.</P>
+            </div>           
+        </div>
+    </section>
+    <section class="firstsection">
+        <div class="box-main">
+            <div class="firstHalf">
+            <br>
+            <h4>Skills:</h4>
+             <p><b>Coding:</b> HTML, CSS, JavaScript, Java  </p>
+                    <p><b>Art/Design Skills:</b> Drawing, Painting, Comics, Graphic Design, 
+                       Video Editing, UI/UX design  </p>
+            </div>
+            <div class="spacehalf"></div>
+            <div class="secondhalf">
+                <br>
+                <h4><br></h4>
+                <p><b>Softwares:</b> Microsoft Office, Adobe Photoshop, Illustrator, After Effects, Figma, Canva, Sketchup </p>
+                    <p><b>Soft Skills:</b> Collaborating, Communications, Researching, Problem SolvingL  </p>
+            </div>          
+        </div>
+    </section>
+</div>
+</main>
+<div class="wrapper row4">
+<footer>
+<p class="fl_center">Madelyn Li &nbsp; <i>limadelyn94@gmail.com</i> &nbsp; 2025 &nbsp; &nbsp;</p>
+</footer>
+</div>
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+</script> 
+</body>
+</html>

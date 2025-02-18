@@ -1,104 +1,120 @@
+<!-- https://www.browserstack.com/guide/build-a-website-using-html-css -->
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
-<title>Madelyn Li's Website</title>
-<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-<meta charset="iso-8859-1">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<link rel="stylesheet" href="styles/layout.css" type="text/css">
-<link rel="stylesheet" href="styles/gallery.css" type="text/css">
-<link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to create a website using HTML and CSS</title>
+<link rel="stylesheet" href="style/styles.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="scripts/jquery-1.8.2.min.js"></script>
-<script src="scripts/jquery-defaultvalue.js"></script>
-<script src="scripts/jquery-browsercheck.js"></script>
-<!--[if lt IE 9]>
-<link rel="stylesheet" href="styles/ie.css" type="text/css">
-<script src="scripts/ie/html5shiv.min.js"></script>
-<![endif]-->
+<link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<script>
-$(function () {
-    $("#nav-placeholder").load("includes/menu.html");
-    $("#footer-placeholder").load("includes/footer.html");
-    $("#sidebar-placeholder").load("includes/sidebar.html");
-});
-</script>
-<div id="nav-placeholder"> </div>
-<!-- content -->
-<div class="wrapper row3">
-  <div id="container" class="clear">
-    <!-- content body -->
-      <div id="content">
-          <section class="hoc container clear"> 
-            <!-- ################################################################################################ -->
-            <div class="sectiontitle">
-              <h1 class="heading">2D Design Art</h1>   
-            </div>
-            <div class="group">
-                  <article class="two_quarter first"><a href="#"><img class="btmspace-30" src="images/Growing_with_Elegance.jpg" alt="" style="width:450px; height:auto;"></a><br>
-                    <h3 class="nospace heading font-x1">Growing with Elegance</h3>        
-                    <p><b>Year</b>:  2023<br>
-                       <b>Medium</b>: Adobe Photoshop<br>
-                       <b>Dimension</b>: 1496 x 1080 (Pixel)</p>
-                    <footer class="nospace"><a class="btn" href="#"> <br><br></a></footer>
-                  </article>
-                  <article class="two_quarter"><a href="#"><img class="btmspace-30" src="images/A_Window_to_Nature.jpg" alt="" style="width:450px; height:auto;"></a>
-                    <h3 class="nospace heading font-x1">A Window of Nature</h3>
-                    <p><b>Year</b>:  2024<br>
-                       <b>Medium</b>: Adobe Photoshop<br>
-                       <b>Dimension</b>: 1360 x 1030 (Pixel)</p>
-                    <footer class="nospace"><a class="btn" href="#"> <br><br></a></footer>
-                  </article>
-            </div>
-            <div class="group">
-                  <article class="two_quarter"><a href="#"><img class="btmspace-30" src="images/Bento_Box.png" alt="" style="width:450px; height:auto;"></a>
-                    <h3 class="nospace heading font-x1">Bento Box</h3>
-                    <p><b>Year</b>:  2024<br>
-                       <b>Medium</b>: Adobe Photoshop<br>
-                       <b>Dimension</b>: 1308 x 742 (Pixel)</p>
-                    <footer class="nospace"><a class="btn" href="#"> <br></a></footer>
-                  </article>
-                  <article class="two_quarter"><a href="#"><img class="btmspace-30" src="images/Yunnan_Mushroom_Hot_Pot.jpg" alt="" style="width:450px; height:auto;"></a>
-                    <h3 class="nospace heading font-x1">Yunnan Mushroom Hot Pot</h3>
-                    <p><b>Year</b>:  2024<br>
-                       <b>Medium</b>: Adobe Photoshop<br>
-                       <b>Dimension</b>: 1100 x 623 (Pixel)</p>
-                    <footer class="nospace"><a class="btn" href="#"> <br></a></footer>
-                  </article>
-            </div>
-            </section>
-            <section class="hoc container clear"> 
-            <div class="group">
-              <article class="two_quarter"><a href="#"><img class="btmspace-30" src="images/Tacos_Gobernator.png" alt="" style="width:450px; height:auto;"></a>
-                <h3 class="nospace heading font-x1">Tacos Gobernator</h3>
-                <p><b>Year</b>:  2024<br>
-                   <b>Medium</b>: Adobe Photoshop<br>
-                   <b>Dimension</b>: 800 x 648 (Pixel)</p>
-                <footer class="nospace"><a class="btn" href="#"> <br><br></a></footer>
-              </article>
-              <article class="two_quarter"><a href="#"><img class="btmspace-30" src="images/Jiangxi_Breaded_Pork.png" alt="" style="width:450px; height:auto;"></a>
-                <h3 class="nospace heading font-x1">Jiangxi Breaded Pork</h3>
-                <p><b>Year</b>:  2024<br>
-                   <b>Medium</b>: Adobe Photoshop<br>
-                   <b>Dimension</b>: 800 x 648 (Pixel)</p>
-                <footer class="nospace"><a class="btn" href="#"> <br><br></a></footer>
-              </article>
-            </div>   
-            <div class="group">
-              <article class="two_quarter"><div id="rightImage"><img class="btmspace-30" src="images/Bangers_and_Mash.png" alt="" style="width:450px; height:auto;"></div>
-                <h3 class="nospace heading font-x1">Bangers and Mash</h3>
-                <p><b>Year</b>:  2024<br>
-                   <b>Medium</b>: Adobe Photoshop<br>
-                   <b>Dimension</b>: 1252 x 708 (Pixel)</p>
-                <footer class="nospace"><a class="btn" href="#"> <br></a></footer>
-              </article>               
-              </div>
-
-          </section>
-      </div>
-  </div>
+<div class="wrapper row1">
+    <header >
+        <img class="header" src="images/logo.png" alt="Logo">
+    </header>
 </div>
-    
-<div id="footer-placeholder"> </div> 
+<div class="wrapper row2">
+	<div class="topnav " id="myTopnav">
+	  <a href="index.html"><b>Home</b></a>
+      <a href="about.html"><b>About Me</b></a>
+      <a href="website_and_mobile_app.html"><b>Website and Mobile App Projects</b></a>
+	  <div class="dropdown">
+	  	      <button class="dropbtn"><b class="active">Studio Art</b>
+          <i class="fa fa-caret-down"></i>
+        </button>
+              <div class="dropdown-content">
+                <a href="drawing.html">Drawing</a>
+                <a href="2D_design_art.html">2D Design Art</a>
+                <a href="3D_design_art.html">3D Design Art</a>
+              </div>
+       </div>
+	  <a href="graphicdesign.html"><b>Graphic Design</b></a>
+	  <a href="photography.html"><b>Photography</b></a>
+	  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	    <i class="fa fa-bars"></i>
+	  </a>
+	</div>
+</div>
+<main>
+<div class="wrapper row1">
+	<section class="firstsection">
+        <div class="box-main">      
+            <div class="secondhalf">  
+            <br>            
+             <h1>2D Design Art</h1><br>
+                <div id="project">
+                   <div class="design_container">
+                          <article ><a href="images/Growing_with_Elegance.jpg"><img class="btmspace-30" src="images/Growing_with_Elegance.jpg" alt="" style="width:100%; height:auto;"></a>
+                            <h3 class="">Growing with Elegance</h3>        
+                            <p><b>Year</b>:  2023<br>
+                               <b>Medium</b>: Adobe Photoshop<br>
+                               <b>Dimension</b>: 1496 x 1080 (Pixel)</p>                   
+                          </article>
+                          <article ><a href="images/A_Window_to_Nature.jpg"><img class="btmspace-30" src="images/A_Window_to_Nature.jpg" alt="" style="width:100%; height:auto;"></a>
+                            <h3 class="nospace heading font-x1">A Window of Nature</h3>
+                            <p><b>Year</b>:  2024<br>
+                               <b>Medium</b>: Adobe Photoshop<br>
+                               <b>Dimension</b>: 1360 x 1030 (Pixel)</p>                    
+                          </article>
+                    </div>
+                    <div class="design_container">
+                          <article ><a href="images/Bento_Box.png"><img class="btmspace-30" src="images/Bento_Box.png" alt="" style="width:100%; height:auto;"></a>
+                            <h3 >Bento Box</h3>
+                            <p><b>Year</b>:  2024<br>
+                               <b>Medium</b>: Adobe Photoshop<br>
+                               <b>Dimension</b>: 1308 x 742 (Pixel)</p>                  
+                          </article>
+                          <article ><a href="images/Yunnan_Mushroom_Hot_Pot.jpg"><img class="btmspace-30" src="images/Yunnan_Mushroom_Hot_Pot.jpg" alt="" style="width:100%; height:auto;"></a>
+                            <h3 >Yunnan Mushroom Hot Pot</h3>
+                            <p><b>Year</b>:  2024<br>
+                               <b>Medium</b>: Adobe Photoshop<br>
+                               <b>Dimension</b>: 1100 x 623 (Pixel)</p>
+                          </article>
+                    </div>
+                    <div class="design_container">
+                          <article><a href="images/Tacos_Gobernator.png"><img class="btmspace-30" src="images/Tacos_Gobernator.png" alt="" style="width:100%; height:auto;"></a>
+                            <h3>Tacos Gobernator </h3>
+                            <p><b>Year</b>:  2024<br>
+                               <b>Medium</b>: Adobe Photoshop<br>
+                               <b>Dimension</b>: 800 x 648 (Pixel)</p>
+                          </article>
+                          <article ><a href="images/Jiangxi_Breaded_Pork.png"><img class="btmspace-30" src="images/Jiangxi_Breaded_Pork.png" alt="" style="width:100%; height:auto;"></a>
+                            <h3>Jiangxi Breaded Pork</h3>
+                            <p><b>Year</b>:  2024<br>
+                               <b>Medium</b>: Adobe Photoshop<br>
+                               <b>Dimension</b>: 800 x 648 (Pixel)</p>
+                          </article>
+                    </div>   
+                    <div class="design_container">
+                          <article ><a href="images/Bangers_and_Mash.png"><img class="btmspace-30" src="images/Bangers_and_Mash.png" alt="" style="width:100%; height:auto;"></a>
+                            <h3>Bangers and Mash</h3>
+                            <p><b>Year</b>:  2024<br>
+                               <b>Medium</b>: Adobe Photoshop<br>
+                               <b>Dimension</b>: 1252 x 708 (Pixel)</p>
+                          </article>               
+                          <article ><p></p>
+                          </article>
+                    </div>                  
+        </div> <!-- end project -->
+    </div>  <!-- end secondhalf -->    
+</div>
+</main>
+<div class="wrapper row4">
+<footer>
+<p class="fl_center">Madelyn Li &nbsp; <i>limadelyn94@gmail.com</i> &nbsp; 2025 &nbsp; &nbsp;</p>
+</footer>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script> 
+</body>
+</html>
